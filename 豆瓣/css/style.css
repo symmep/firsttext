@@ -12,20 +12,22 @@ img{
 ul,ol{
     list-style: none;
 }
+input {
+    outline: none;
+}
 /*css reset  结束*/
 body{
     background: #fff;
+    font-size: 12px;
 }
 .wrap{
     width: 950px;
-    background: #ffff00;
     margin:0 auto;
     position: relative;
 }
 /*navy 开始 */
 #nav{
     height: 84px;
-    background: #fff0ff;
 }
 #logo{
     position: absolute;
@@ -53,12 +55,12 @@ body{
     width: 30px;
     height: 30px;
     border:0;
-    background: url("../img/bn_srh_1.png" ) no-repeat center center;
+    background: url("../img/btn_search_bg.png" ) no-repeat center center;
     float: left;
 }
 #nav-menu{
     position: absolute;
-    right:5px;
+    right:0;
     top: 50%;
     margin-top: -10px;
 }
@@ -68,7 +70,7 @@ body{
 }
 #nav-menu a{
     display: block;
-    width: 42px;
+    width: 40px;
     height: 20px;
     background: url("../img/anony_nav_logo.png") no-repeat;
     text-indent: -9999px;

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font:normal 12px/17px Arial;
+        }
+        form div{
+            margin:5px 0;
+        }
+        .int label{
+            float: left;
+            width: 100px;
+            text-align: right;
+        }
+        .int input{
+            padding: 1px;
+            height: 20px;
+            border:1px solid #000000;
+        }
+        .sub{
+            position: relative;
+            left: 100px ;
+        }
+        .sub input{
+            margin:3px;
+        }
+        .formtips{
+            width: 200px;
+            margin: 2px;
+            padding: 10px;
+        }
+        .high{
+            color: #ff0000;
+        }
+        .onError{
+            background: pink url("img/reg3.gif") no-repeat 0 center ;
+            padding-left: 25px;
+        }
+        .onSuccess{
+            background: palegreen url("img/reg4.gif") no-repeat 0 center;
+            padding-left:25px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="int">
+            <label for="username">用户名:</label>
+            <input type="text" id="username" class="required">
+        </div>
+        <div class="int">
+            <label for="email">邮箱:</label>
+            <input type="text" id="email" class="required">
+        </div>
+        <div class="int">
+            <label for="personinfo">个人资料:</label>
+            <input type="text" id="personinfo" />
+        </div>
+        <div class="sub">
+            <input type="submit" value="提交" id="send"/><input type="reset" id="res"/>
+        </div>
+    </form>
+    <script src="../../../jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $("form :input.required").each(function () {
+                var $required = $('<strong class="high">*</strong>');
+                $required.insertAfter(this)
+            }).on("blur",function () {
+                $(this).nextAll(".formtips").remove();
+                if($(this).is('#username') ){
+                    if(this.value==""||this.value.length< 6 ){
+                        var errorMsg = '请输入至少6位用户名';
+                        $(this).next().after('<span class="formtips onError">'+errorMsg+'</span>')
+
+                    }else{
+                        var okMsg = '输入正确';
+                        $(this).next().after('<span class="formtips onSuccess">'+okMsg+'</span>')
+
+                    }
+                }
+                if($(this).is('#email') ) {
+                    if (this.value == "" || ( this.value!="" && !/.+@.+\.[a-zA-Z]{2,4}$/.test(this.value) )) {
+                        var errorMsg = '请输入正确的E-Mail地址';
+                        $(this).next().after('<span class="formtips onError">' + errorMsg + '</span>')
+
+                    } else {
+                        var okMsg = '输入正确';
+                        $(this).next().after('<span class="formtips onSuccess">' + okMsg + '</span>')
+                    }
+                }
+            }).on("keyop",function () {
+                $(this).triggerHandler("blur")
+            }).on("focus",function () {
+                $(this).triggerHandler("blur")
+            });
+            $("#send").on(click,function () {
+                $("form:input.required")
+            })
+
+        })
+    </script>
+</body>
+</html>

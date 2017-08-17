@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font:normal 12px/17px Arial;
+        }
+        div{
+            padding: 2px;
+        }
+        input,textarea{
+            width: 12em;
+            border:1px solid #000;
+        }
+        .focus{
+            border:1px solid #ff0;
+            background: #F90;
+        }
+    </style>
+    <script src="../../../jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $(":input").on("focus",function () {
+                $(this).addClass("focus");
+                if($(this).val() == this.defaultValue){
+                    this.value = "";
+                }
+            }).on("blur",function () {
+                $(this).removeClass("focus").val(this.value==""?this.defaultValue:this.value);
+            });
+        })
+    </script>>
+</head>
+<body>
+<form action="" method="post" id="iForm">
+    <fieldset>
+        <legend>个人信息</legend>
+        <div>
+            <label for="username">名称：</label>
+            <input type="text" id="username" value="名称">
+        </div>
+        <div>
+            <label for="pass">密码：</label>
+            <input type="password" id="pass" value="密码">
+        </div>
+        <div>
+            <label for="msg">详情信息：</label>
+            <textarea id="msg" cols="20" rows="2">详细信息</textarea>
+        </div>
+    </fieldset>
+</form>
+
+</body>
+</html>

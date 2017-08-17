@@ -1,0 +1,173 @@
+/*公用样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:0;
+}
+ol,ul{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+/*cssreset结束*/
+body{
+    background: #fff;
+    font-size: 12px;
+}
+.wrap{
+    width: 980px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+/*header 开始 */
+#header{
+    display: block;
+    height: 100px;
+    background: url("../imgs/upload/headerbg.png") repeat-x scroll 0 0 #FFFFFF;
+}
+#header .logo{
+    float: left;
+    position: relative;
+}
+#header .search{
+    float: left;
+    position: relative;
+    top: 20px;
+    left:10px;
+}
+#inputSearch{
+    width: 200px;
+    font-size: 15px;
+    border: 1px solid #BABEBF;
+    color: #999999;
+    height: 17px;
+    padding:3px 6px 5px 6px ;
+
+}
+#skin{
+    float: right;
+    margin: 10px;
+    padding: 4px;
+    overflow: hidden;
+}
+#skin li{
+    float: left;
+    margin-right:2px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-indent:-999px;
+    cursor: pointer;
+    background-image: url("../imgs/theme.gif");
+
+
+}
+#skin_0{
+    background-position: 0px 0px;
+}
+#skin_1{
+    background-position: 15px 0px;
+}
+#skin_2{
+    background-position: 35px 0px;
+}
+#skin_3{
+    background-position: 55px 0px;
+}
+#skin_4 {
+    background-position: 75px 0px;
+}
+#skin_5{
+    background-position: 95px 0px;
+}
+#skin_0.selected{
+    background-position: 0px 15px;
+}
+#skin_1.selected{
+    background-position: 15px 15px;
+}
+#skin_2.selected{
+    background-position: 35px 15px;
+}
+#skin_3.selected{
+    background-position: 55px 15px;
+}
+#skin_4.selected{
+    background-position: 75px 15px;
+}
+#skin_5.selected{
+    background-position: 95px 15px;
+}
+#nav{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: #000;
+    width: 100%;
+    height: 37px;
+    line-height:37px;
+}
+div .nav li{
+    float: left;
+    margin-left:30px ;
+
+}
+div .nav li a{
+    font-size: 14px;
+    color: #fff;
+}
+.jnNav{
+    display: none;
+}
+#content{
+    display: block;
+    height: 580px;
+}
+.janeshop{
+    width: 980px;
+    height: 580px;
+    margin: 0 auto;
+    padding:10px 0;
+}
+#jnCatalog{
+    width: 187px;
+    height: 530px;
+    float: left;
+}
+h2{
+    height: 30px;
+    line-height: 30px;
+    background: #6E6E6E;
+    font-size: 14px;
+    text-indent: 13px;
+    color: #FFFFFF;
+}
+.jnCatainfo{
+    border:1px solid #6E6E6E;
+    border-style:none solid solid solid;
+    height: 524px;
+    padding: 10px;
+}
+.jnCatainfo ul{
+    padding:0 2px 8px ;
+}
+.jnCatainfo li{
+    width: 79px;
+    height: 24px;
+    line-height:24px;
+    float: left;
+    color: #AEADAE;
+}
+.jnCatainfo li a{
+    color: #444444;
+}
+#jnNotice{
+    float: right;
+}

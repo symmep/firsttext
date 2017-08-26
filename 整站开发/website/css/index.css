@@ -1,0 +1,32 @@
+#nav{
+    height: 120px;
+}
+#nav .wrapper{
+    width: 1002px;
+    height: 120px;
+    background: url("../imgs/logo.png") no-repeat left center;
+    overflow: hidden;
+}
+#nav ul{
+    margin-left: 334px;
+    margin-top:53px;
+}
+#nav li{
+    float: left;
+    height: 14px;
+    line-height: 14px;
+}
+#nav li a{
+    float: left;
+    font-size: 14px;
+    color: #626262;
+    text-indent: 19px;
+}
+#nav li span{
+    width: 1px;
+    height: 14px;
+    display: block;
+    background: url("../imgs/imgf.png") no-repeat 0 0;
+    float: right;
+
+}

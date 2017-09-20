@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*.container{*/
+            /*width: 600px;*/
+        /*}*/
+        /*.div1{*/
+            /*float: left;*/
+            /*margin: 10px;*/
+            /*background: gold;*/
+            /*padding-left:20px;*/
+            /*width: 100px;*/
+            /*height: 50px;*/
+            /*border-left: 2px solid #000000;*/
+            /*-webkit-background-clip:content-box ;*/
+            /*-moz-background-clip:content-box;*/
+            /*-ms-background-clip:content-box ;*/
+            /*-o-background-clip:content-box ;*/
+            /*background-clip:content-box;*/
+        /*}*/
+        /*div:nth-child(4n + 1){*/
+            /*border-left: none;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--<div class="container">-->
+    <!--<div class="div1"></div>-->
+    <!--<div class="div1"></div>-->
+    <!--<div class="div1"></div>-->
+    <!--<div class="div1"></div>-->
+    <!--<div class="div1"></div>-->
+    <!--<div class="div1"></div>-->
+    <!--<div class="div1"></div>-->
+<!--</div>-->
+<script>
+    var arr = [1,2,3,2,1,2,2,3,32,1,2];
+    var newArr = [];
+
+    for(var i = 0; i < arr.length; i++){
+        if (newArr.indexOf(arr[i])  == -1){
+            newArr.push(arr[i])
+        }
+    }
+    console.log(newArr);
+//    var str = "hello world";
+//    console.log(str.);
+
+</script>
+</body>
+</html>

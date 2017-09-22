@@ -1,0 +1,314 @@
+/*类别开始*/
+.category {
+    /*width: 8.75rem;*/
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+    width: 1120px;
+    margin:100px auto;
+    text-align: center;
+    overflow: hidden;
+}
+.category-title{
+    line-height: 36px;
+    font-size:36px;
+    /*margin:0.78125rem auto;*/
+}
+.category-content{
+    margin: 100px auto;
+}
+.category-content ul{
+    width: 100%;
+    /*height: 2.1875rem;*/
+    height: 280px;
+}
+.category-item{
+    position: relative;
+    float: left;
+}
+.category-item img{
+    /*width: 2.1875rem;*/
+    /*height:2.1875rem;*/
+    width: 280px;
+    height: 280px;
+    display: block;
+}
+.category .overspread{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34,34,34,.6);
+}
+.category .title{
+    position: absolute;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.category .title .text1{
+    font-size:28px;
+    font-weight: bold;
+}
+.category .title p{
+    font-size: 20px;
+    margin-top: 0.078125rem;
+}
+@media(max-width: 1260px){
+    .category{
+        width: 560px;
+        height: 100%;
+    }
+}
+/*类别结束*/
+/*精选房源开始*/
+.hot-house{
+    clear: both;
+    width: 100%;
+    /*height: 970px;*/
+    /*height: 6.015625rem;*/
+    /*margin: 0.78125rem auto 0;*/
+    background: rgba(246,248,250,1);
+    /*padding-top: 0.78125rem;*/
+    /*padding-bottom: 1.5625rem;*/
+    padding: 100px 0;
+}
+.hot-house .container{
+    /*width: 7.4140625rem;*/
+    width: 949px;
+    /*height: 770px;*/
+    text-align: center;
+    margin: 0 auto;
+  }
+.hot-house .container .text1{
+    font-size:48px;
+    line-height: 48px;
+}
+.hot-house .container .text2{
+    font-size:22px;
+    line-height: 40px;
+    /*margin: 0.390625rem auto;*/
+    margin:50px auto;
+    opacity: .8;
+}
+.house-list{
+    /*width: 100%;*/
+    /*height: 3.609375rem;*/
+    /*display: -webkit-box;*/
+    width: 100%;
+    height: 382px;
+    margin: 80px auto;
+    overflow: hidden;
+}
+.house{
+    float: left;
+    width: 303px;
+    height: 382px;
+    margin-right: 20px;
+    /*-webkit-box-flex: 1;*/
+}
+/*.mid{*/
+    /*margin: 0 0.15625rem;*/
+/*}*/
+.house:nth-child(3n),.house:last-child{
+    margin-right:0;
+}
+.house img{
+    display: block;
+    /*width: 2.359375rem;*/
+    /*height: 1.78125rem;*/
+    width: 302px;
+    height: 228px;
+}
+.house-warp{
+    /*width: 2.359375rem;*/
+    /*height: 1.203125rem;*/
+    width: 302px;
+    height: 154px;
+    background: #FFFFFF;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+}
+.house-area{
+    font-size:12px;
+    line-height: 16px;
+    color: #95989A;
+    /*margin-top: 0.171875rem;*/
+    /*margin-left: 0.171875rem;*/
+    margin-top: 22px;
+    margin-left:22px;
+}
+.house-name{
+    /*height: 23px;*/
+    font-size:20px;
+    line-height:22px;
+    /*margin-top: 0.03125rem;*/
+    /*margin-left: 0.171875rem;*/
+    margin-top:4px;
+    margin-left:22px;
+    opacity: .8;
+    color: #222222 ;
+}
+.house-info{
+    display: table;
+    text-align: center;
+    /*overflow: hidden;*/
+    border-top: 1px solid #f6f8fa;
+    /*margin-top:0.1484375rem ;*/
+    position: absolute;
+    bottom: 0;
+}
+.house-info li{
+    display: table-cell;
+    /*height: 0.546875rem;*/
+    height: 70px;
+    vertical-align: middle;
+}
+.house-info .left,.house-info .right{
+    /*width: 0.875rem;*/
+    width: 112px;
+}
+.house-info .mid{
+    /*width: 0.59375rem;*/
+    width: 76px;
+    border-style: solid;
+    border-width: 0 1px;
+    border-color: #f6f8fa;
+    margin: 0;
+}
+/*.house-info .right{*/
+    /*width: 0.875rem;*/
+/*}*/
+.house-info .title{
+    font-size:12px;
+    color: #95989A;
+    line-height: 12px;
+    height: 12px;
+}
+.house-info .desc{
+    font-size:14px;
+    color: #f5a623;
+    /*margin-top: 0.09375rem;*/
+    margin-top: 12px;
+}
+.more {
+    /*width: 1.46875rem;*/
+    /*height: 0.390625rem;*/
+    width: 188px;
+    height: 50px;
+    border: 1px solid #C7C7CC;
+    /*border-radius: 0.0390625rem;*/
+    border-radius: 5px;
+    font-size: 15px;
+    opacity: .8;
+    /*line-height: 0.390625rem;*/
+    line-height:50px;
+    margin:0 auto;
+}
+.more a{
+    color: #222222;
+}
+@media (max-width: 949px) {
+    .hot-house .container{
+        width: 626px;
+    }
+    .house:nth-child(2n),.house:last-child{
+        margin-right:0;
+    }
+}
+/*精选房源结束*/
+/*项目改造开始*/
+.remould{
+    /*background-image: url(../imgs/bg_slide_001@2x.png);*/
+    /*background-repeat:no-repeat;*/
+    /*background-position: -0.53125rem 0;*/
+    /*-webkit-background-size:100% 100%;*/
+    /*background-size:100% 100%;*/
+    width: 100%;
+    height: 675px;
+    position: relative;
+}
+.remould img{
+    width: 100%;
+    height: 100%;
+}
+.remould .overspread{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,.1);
+    text-align: center;
+}
+.remould-text{
+    width: 50%;
+    margin-left: 0.9375rem;
+    text-align: left;
+    position: absolute;
+   bottom: 0.78125rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+.remould .text1{
+    font-size: 52px;
+    color: #FFFFFF;
+}
+.remould .text2{
+    font-size:22px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-top: 0.390625rem;
+}
+.remould .text3{
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 0.46875rem;
+}
+/*项目改造结束*/
+/*民宿案例开始*/
+.guesthouse{
+    margin:0 auto;
+}
+.guesthouse .house-name{
+    font-size:18px;
+    line-height: 28px;
+    /*margin-top: 0.015625rem;*/
+    margin-top: 2px;
+}
+.guesthouse .house-warp {
+    height: 155px;
+}
+/*民宿案例结束*/
+/*推广视频开始*/
+.popularize-video{
+    width: 100%;
+    /*height: 675px;*/
+    position: relative;
+}
+.video-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.video-play{
+    width: 110px;
+    height: 110px;
+    z-index: 2;
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    margin-top: -55px;
+    margin-left:-55px;
+    cursor: pointer;
+}
+#popularize-video {
+    width: 100%;
+    height: 100%;
+}
+/*推广视频结束*/
+/*特别活动开始*/

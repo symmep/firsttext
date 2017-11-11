@@ -20,7 +20,7 @@ define(["jquery"],function($){
         };
         $.extend(this.defaultSettings, settings);
 
-        console.log(settings);
+        // console.log(settings);
 
     }
     Carousel.prototype.init = function () {

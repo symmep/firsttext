@@ -27,7 +27,7 @@
     goTop.onclick = function () {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         var timer = setInterval(function () {
-            window.scrollTo( 0,scrollTop-= 10);
+            window.scrollTo( 0,scrollTop-= 100);
             if (scrollTop <= 0){
                 clearInterval(timer)
             }

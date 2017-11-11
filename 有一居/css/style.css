@@ -23,11 +23,29 @@ img{
     z-index: 3;
 }
 .wrap{
-    margin:0 0.3125rem;
+    margin:0 0.4rem;
     overflow: hidden;
-
+    height: 100%;
 }
-.wrap a{
+#nav-button{
+    display: none;
+}
+.nav .line{
+    width: 0.3356rem;
+    height: 0.0156rem;
+    background: #fff;
+    border: 1px solid #FFFFFF;
+    -webkit-border-radius: 0.0178rem ;
+    -moz-border-radius: 0.0178rem;
+    -ms-border-radius: 0.0178rem;
+    -o-border-radius: 0.0178rem;
+    border-radius: 0.0178rem;
+    margin-top: 0.1066rem;
+}
+.nav .line:first-child{
+    margin-top: 0;
+}
+.wrap .logo-img{
     float: left;
     height: 50px;
     line-height: 50px;
@@ -38,16 +56,49 @@ img{
     height: 22px;
     vertical-align: middle;
 }
+.nav-down{
+    overflow: hidden;
+    background-color: rgba(0,0,0,.5);
+}
 .language{
     float: left;
-    margin-left: 0.3125rem;
+    margin-left: 0.4rem;
+    overflow: hidden;
+    height: 100%;
+    width: 50px;
+}
+.language li{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+}
+.down-button{
+    float: left;
+}
+.dropDown{
+    vertical-align: middle;
+}
+.dropDown img{
+    width: 4px;
+    height: 8px;
+    transform: rotate(90deg);
+    margin-left: 8px;
+}
+.dropDown-menu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    padding-left: 0.2rem;
 }
 .menu{
+    height: 100%;
     float: right;
+    overflow: hidden;
 }
 .menu li{
     float: left;
-    margin-left: 0.3125rem;
+    margin-left: 0.4rem;
+    line-height: 50px;
 }
 li a{
     color: rgba(216,216,216,1);
@@ -63,21 +114,26 @@ li a{
     height: 675px;
     overflow: hidden;
 }
-.images .img1,.images .img2{
-    display: none;
-}
 .images img{
     width: 100%;
+    height: 100%;
     display: block;
 }
-/*.img2{*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*background-image: url(../imgs/千本三条.jpeg);*/
-    /*background-repeat:no-repeat;*/
-    /*background-position: -0.53125rem 0;*/
-    /*background-size:100% 100%;*/
-/*}*/
+.call-us{
+    display: none;
+}
+.images .swiper-pagination{
+    top: -150px;
+}
+.images .swiper-pagination-bullet{
+    width: 0.5rem;
+    height: 2px;
+    margin-left: 0.1rem;
+}
+.swiper-button-prev,.swiper-button-next{
+    position: absolute;
+    top:0;
+}
 .images .overspread{
     position: absolute;
     top: 0;
@@ -89,6 +145,10 @@ li a{
     width: 100%;
     position: absolute;
     top:50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
     color: #FFFFFF;
@@ -99,10 +159,10 @@ li a{
 }
 .carousel-caption .text2{
     font-size: 48px;
-    margin-top: 0.3125rem;
+    margin-top: 0.4rem;
 }
 .carousel-caption .text3{
-    margin-top: 0.46875rem;
+    margin-top: 0.6rem;
 }
 .carousel-caption .show-detail{
     font-size:24px;
@@ -113,24 +173,34 @@ li a{
 }
 .carousel-imgs {
     position: absolute;
-    width:1.015625rem;
-    bottom: 0.40625rem;
+    width:1.3rem;
+    bottom: 0.52rem;
     left:50%;
-    margin-left:-0.5078125rem;
+    margin-left:-0.65rem;
 }
 .carousel-imgs li{
-    width: 0.390625rem;
+    width: 0.5rem;
     height: 2px;
     border-bottom:2px solid rgba(97,97,97,90) ;
     float: left;
-    margin-left: 0.078125rem;
+    margin-left: 0.1rem;
 }
 .carousel-imgs .selected{
     border-bottom:2px solid rgba(223,223,223,100)
 }
-@media (max-width: 1013px ) {
-    .images{
-        height: 100%;
-    }
-}
 /*轮播图结束*/
+.container .text1 {
+    font-size: 48px;
+    line-height: 48px;
+    color: #303030;
+}
+.container .text2{
+    font-size:22px;
+    line-height: 40px;
+    margin:50px auto;
+    opacity: .8;
+    filter:alpha(opacity=80);
+    color: #222222;
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <style>
+        .red{
+            background: red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="app">-->
+    <!--<button class="abc" @click="fn">hit</button>-->
+    <!--<div :id="p" :class="classObj"></div>-->
+<!--</div>-->
+<div id="app">
+    <input type="checkbox" v-model="sel" value="c">啊
+    <input type="checkbox" v-model="sel" value="d">阿
+    <!--<input type="checkbox" v-model="sel" value="e">錒-->
+</div>
+<script src="vue.js"></script>
+<script>
+//    var vm = new Vue({
+//        el:'#app',
+//        data:{
+//            msg:'<h1>hhhhh</h1>',
+//            p:'abc',
+//            pp:'aaaa',
+//            classObj:{
+
+//                red:true
+//            }
+//        },
+//        methods:{
+//            fn:function () {
+//                vm.classObj.red=!vm.classObj.red;
+//            }
+//        }
+//    })
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            sel:[c]
+        }
+    })
+
+</script>
+</body>
+</html>

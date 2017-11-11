@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!--<demo1 :msg1="a"></demo1>-->
+        <!--<demo1 :msg1="a" :msg2="b"></demo1>-->
+        <demo1>
+            <h1 slot="title">aaaaa</h1>
+            <h1 slot="title1">bbbbbb</h1>
+        </demo1>
+    </div>
+    <script src="vue.js"></script>
+    <script id="temp" type="text/x-template">
+        <div>
+            <slot name="title">
+                <h1>33333</h1>
+            </slot>
+            <slot name="title1">
+                <h1>44444</h1>
+            </slot>
+        </div>
+    </script>
+    <script>
+        var xm = new Vue({
+             el:"#app",
+             data:{
+                a:"1111",
+                 b:'2222'
+             },
+             components:{
+                demo1:{
+//                    template:'<h1>{{msg1}}{{msg2}}</h1>',
+                    template:'#temp',
+                    props:['msg1','msg2']
+                }
+
+          }
+        })
+    </script>
+</body>
+</html>

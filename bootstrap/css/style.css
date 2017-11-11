@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+/*导航开始*/
+.nav{
+    width: 100%;
+    z-index: 3;
+}
+.header-bg{
+    width: 100%;
+    position: absolute;
+    top: -2rem;
+}
+/*.nav .wrap{*/
+    /*width: 100%;*/
+    /*background: #FFFFFF;*/
+    /*color: #000;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 50%;*/
+    /*-webkit-transform: translateX(-50%);*/
+    /*-moz-transform: translateX(-50%);*/
+    /*-ms-transform: translateX(-50%);*/
+    /*-o-transform: translateX(-50%);*/
+    /*transform: translateX(-50%);*/
+    /*opacity:.6;*/
+    /*filter:alpha(opacity=60);*/
+    /**/
+/*}*/
+/*.nav .menu{*/
+    /*float: right;*/
+/*}*/
+/*.nav .menu li{*/
+    /*float: left;*/
+/*}*/

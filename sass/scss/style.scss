@@ -1,0 +1,24 @@
+
+body{
+  color: #aabbcc;
+  font-size: 20px;
+}
+ul{
+  li{
+    a{
+      &:hover{
+        color: #000;
+      }
+    }
+  }
+}
+@mixin aa($f,$c){
+  font-size: $f;
+  color: $c;
+}
+body{
+  @include aa($f:20px,$c:#aaa)
+}
+ul{
+  @include aa($f:20px,$c:#aaa)
+}

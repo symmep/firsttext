@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #app{
+            width: 250px;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            background: #00ff00;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .red{
+            background: #ff0000;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1>services</h1>
+    <ul>
+        <li v-for="pro in arr" @click="fn(pro)" :class="{red:pro.status}">
+            <span class="left">{{pro.name}}</span>
+            <span class="right">{{pro.price}}</span>
+        </li>
+    </ul>
+    <hr/>
+    总计：<span class="right">{{add()}}</span>
+</div>
+<script src="vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            arr:[{name:'iphone7',price:4388,status:false},{name:'iphone8',price:5838,status:false},{name:'iphone8s',price:6138,status:false},{name:'iphoneX',price:8358,status:false}]
+        },
+        methods:{
+          fn:function (pro) {
+              pro.status = !pro.status;
+          },
+          add(){
+              var num = 0;
+              this.arr.forEach(function (val,index) {
+                  if(val.status){
+                      num += val.price;
+                  }
+              })
+              return num;
+          }
+        }
+    })
+</script>
+</body>
+</html>

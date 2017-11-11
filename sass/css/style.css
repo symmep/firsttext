@@ -1,0 +1,21 @@
+body {
+  color: #aabbcc;
+  font-size: 20px;
+}
+
+ul li a:hover {
+  color: #000;
+  border:50px s;
+}
+
+body {
+  font-size: 20px;
+  color: #aaa;
+}
+
+ul {
+  font-size: 20px;
+  color: #aaa;
+}
+
+/*# sourceMappingURL=style.css.map */

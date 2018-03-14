@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Countdown Test</title>
+        <style type="text/css" media="screen">
+            body {
+                font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+            }
+            body * {
+                font-size: 16px;
+                font-weight: normal;
+            }
+            div, h1 {
+                margin: 30px;
+            }
+            h1 {
+                font-weight: bold;
+                margin-left: 10px;
+            }
+            h2 {
+                font-style: italic;
+                color: grey;
+                margin: 10px 0 -10px 40px;
+            }
+            .countdown {
+                display: block;
+            }
+            .countdown .item {
+                padding: 10px;
+            }
+            .countdown .label {
+                padding: 0 0 0 5px;
+            }
+            time:not(.countdown) {
+                border: 10px solid red;
+            }
+            #generated-markup {
+                margin-left: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+        A <time> datetime attribute with a valid global date and time string, time string or duration string
+        -->
+
+        <hr>
+
+        <h1>Datetime attribute</h1>
+
+        <h2>2017-12-13T17:43:00</h2>
+
+        <div>
+            <time datetime="2017-12-13T17:43:00">Friday, December 13th, 2017 5:43pm</time>
+        </div>
+
+        <h2>02:30:30</h2>
+        <div>
+            <time datetime="02:30:30">Expires in 2 hours 30 minutes 30 seconds</time>
+        </div>
+
+        <h2>P61D</h2>
+        <div>
+            <time datetime="P61D">61 days</time>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script>document.write('<script src="../jquery.countdown.js"><\/script>')</script>
+        <script>
+        window.jQuery(function ($) {
+
+            "use strict";
+
+            $("#toDateString").text(new Date("December 20, 2017 10:24:00").toDateString());
+            $("#toGMTString").text(new Date("December 20, 2017 10:24:00").toGMTString());
+            $("#toUTCString").text(new Date("December 20, 2017 10:24:00").toUTCString());
+            if (Date.prototype.toISOString) {
+                $("#toISOString").text(new Date("December 20, 2017 10:24:00").toISOString());
+            }
+
+            $('div, time').countDown();
+
+        });
+        </script>
+
+    </body>
+</html>
